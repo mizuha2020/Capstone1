@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../assets/font/fontawesome/css/all.css">
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pharmacy-map.css">
+    <link rel="stylesheet" href="../assets/css/question.css">
     <link rel="icon" href="../assets/image/881599_medical_512x512.png" type="image/x-icon">
     <title>Medical Advice</title>
 </head>
@@ -27,11 +29,11 @@
             <div class="grid">
                 <nav class="navbar">
                     <ul class="navbar__menu">
-                        <li class="navbar__menu__item"><a href="index.html" id="selected"><i class="fas fa-home"></i>
+                        <li class="navbar__menu__item"><a href="index.html"><i class="fas fa-home"></i>
                                 Trang Chủ</a></li>
                         <li class="navbar__menu__item"><a href="order.html"><i class="fas fa-capsules"></i> Nhà
                                 Thuốc</a></li>
-                        <li class="navbar__menu__item"><a href="question.html"><i class="fas fa-question-circle"></i>
+                        <li class="navbar__menu__item"><a href="question.html" id="selected"><i class="fas fa-question-circle"></i>
                                 Hỏi Đáp</a>
                         </li>
                         <li class="navbar__menu__item"><a href="pharmacy-map.html"><i class="fas fa-cannabis"></i> Nhà
@@ -198,76 +200,100 @@
     <!-- Container Begin -->
     <div class="container">
         <div class="grid">
-            <div class="grid__row">
-                <div class="grid__column-12">
-                    <h2 class="title_news">Covid-19</h2>
-                    <div class="slider">
-                        <ul class="slider-dots">
-                            <li class="slider-dot-item active" data-index="0"></li>
-                            <li class="slider-dot-item" data-index="1"></li>
-                            <li class="slider-dot-item" data-index="2"></li>
-                            <li class="slider-dot-item" data-index="3"></li>
-                            <li class="slider-dot-item" data-index="4"></li>
-                            <li class="slider-dot-item" data-index="5"></li>
-                        </ul>
-                        <div class="slider-wrapper">
-                            <div class="slider-main">
-                                <div class="slider-item">
-                                    <img src="../assets/image/5k.png" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="../assets/image/Khẩu Trang.png" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="../assets/image/Khu-khuan.png" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="../assets/image/khong-tu-tap.png" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="../assets/image/khoang-cach.png" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="../assets/image/khai_bao_y_te.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="grid__grow">
-                <h2 class="title_news" onclick="createBlog()">Tin tức</h2>
-                <div class="news__container">
-                    <div class="news__blog">
-                        <div class="news__blog__img">
-                            <img src="../assets/image/luu.jpg" alt="">
-                        </div>
-                        <div class="news__blog__info">
-                            <h4 class="news__blog__info__header">12 lợi ích sức khỏe của quả lựu</h4>
-                            <div class="news__blog__info__content"><span>Lựu được xem là một trong những loại trái cây
-                                    tốt nhất cho sức khỏe. Trong quả lựu chứa một loạt các hợp chất từ thực vật có lợi
-                                    mà nhiều loại thực phẩm khác không thể so sánh được. Các nghiên cứu đã cho thấy rằng
-                                    chúng có thể có nhiều lợi ích cho cơ thể và làm giảm nguy cơ mắc nhiều bệnh khác
-                                    nhau. Dưới đây là 12 lợi ích sức khỏe dựa trên bằng chứng của quả lựu.</span>
-                                <a href="#" class="news__blog__link">xem thêm...</a>
+                <br>
+                <div class="pharmacy__container">
+                    <div class="pharmacy__wrapper">
+                        <div class="pharmacy__info">
+                            <h1>Câu hỏi</h1>
+                            <div class="question__content">
+                                <p class="name">Người hỏi: <b>Nguyễn Anh Quốc</b></p>
+                                <p class="content">Nội dung câu hỏi: <b>Tôi bị đau bụng tôi không biết làm sao để hết. Mong bác sĩ giúp tôi</b></p>
+                                <p class="datetime">Thời gian: <b>02/12/2021</b></p>
+                            </div>
+                            <h1>Trả lời</h1>
+                            <div class="question__content">
+                                <p class="name">Người trả lời: <b>Lê Quang Thái</b></p>
+                                <p class="content">Nội dung câu trả lời: <b>Nếu bạn bị đau âm ỉ ở khu vực bụng trên - phía trên dạ dày, hoặc cảm thấy đầy hơi, có thể do bị đầy bụng chướng khí, ợ hơi. Nguyên nhân là ăn nhanh, nuốt nhanh; sử dụng đồ uống có ga, bia, thực phẩm từ sữa và đậu cũng gây hình thành khí quá mức trong dạ dày.
+
+                                    Để tránh tình trạng đau bụng âm ỉ, bạn nên ăn ít các loại thực phẩm, đồ uống này và cần duy trì lối sống lành mạnh, khoa học.
+                                    
+                                    3. Đau dưới ngực hoặc vùng trên cùng của bụng
+                                    Vị trí đau bụng cảnh báo bệnh gì?
+                                    Đau bụng ở các vị trí này có thể do chứng ợ nóng (trào ngược axit) gây ra
+                                    Đau bụng ở các vị trí này có thể do chứng ợ nóng (trào ngược axit) gây ra. Ngoài ra, bạn có thể cảm thấy nóng rát cổ họng và đôi khi thấy mùi vị khó chịu xộc lên cổ họng.
+                                    
+                                    Nguyên nhân là do sử dụng nhiều loại thực phẩm có thể gây ra chứng ợ nóng như đồ nhiều dầu mỡ và cay, rượu, hành sống hay đồ uống chứa caffein, thuốc lá...
+                                    
+                                    Để hạn chế tình trạng này, bạn không nên ăn quá nhiều trong một bữa mà chia thành 5-6 bữa nhỏ thay vì 2-3 bữa ăn lớn hằng ngày. Ngoài ra, bạn nên mặc quần áo rộng để tránh áp lực lên bụng và không sử dụng các chất kích thích có hại cho dạ dày.
+                                    
+                                    4. Đau dữ dội vùng bụng trên
+                                    Viêm loét dạ dày có thể chính là lý do khiến bạn bị đau nhói ở bụng trên và dạ dày, bệnh xuất hiện khi niêm mạc dạ dày bị tổn thương. Các triệu chứng khác của viêm loét dạ dày đó là thay đổi khẩu vị, buồn nôn, đại tiện ra máu hoặc sẫm màu, sụt cân không rõ nguyên nhân...
+                                    
+                                    Nguyên nhân do thường xuyên dùng thuốc aspirin, các loại thuốc chống viêm, hút thuốc, uống quá nhiều rượu cũng ảnh hưởng xấu đến dạ dày và gây viêm loét.
+                                    
+                                    Để ngăn ngừa viêm loét, bạn không nên uống quá hai ly rượu mỗi ngày và không uống thuốc cùng với rượu, hạn chế thuốc giảm đau, rửa tay trước mỗi bữa ăn, duy trì chế độ dinh dưỡng khoa học như các ngũ cốc nguyên hạt, trộn với trái cây hoặc rau quả, đặc biệt là bỏ thuốc lá, rượu bia, các chất kích thích.</b></p>
+                                <p class="datetime">Thời gian: <b>02/12/2021</p>
                             </div>
                         </div>
                     </div>
-                    <div class="news__blog">
-                        <div class="news__blog__img">
-                            <img src="../assets/image/nho.jpg" alt="">
+                    <h1>Câu hỏi tương tự</h1>
+                    <div class="question__view">
+                        <div class="question__answer__container">
+                            <a href="#">
+                                <img src="https://afamilycdn.com/thumb_w/650/150157425591193600/2021/7/13/base64-16261710007082116287345.png" alt=""
+                                    class="question__answer__img">
+                                <h2 class="question__answer__heading">Xử lý thế nào khi cảm thấy túc ngực huyết áp
+                                    tăng
+                                    160/130</h2>
+                                <div class="answer__container">
+                                    <img src="../assets/image/maxresdefault.jpg"
+                                        alt="" class="doctor__img">
+                                    <div class="answer__info">
+                                        <div class="answer__hint">Được trả lời bởi</div>
+                                        <div class="doctor__name">Nguyễn Anh Quốc</div>
+                                    </div>
+                                </div>
+
+                            </a>
                         </div>
-                        <div class="news__blog__info">
-                            <h4 class="news__blog__info__header">12 lợi ích sức khỏe của việc ăn nho hàng ngày</h4>
-                            <div class="news__blog__info__content"><span>Nho là loại quả chứa nhiều chất dinh dưỡng,
-                                    chất xơ, kali... Nho cung cấp rất nhiều lợi ích sức khỏe do hàm lượng chất dinh
-                                    dưỡng và chất chống oxy hóa cao. Dưới đây là 12 lợi ích sức khỏe hàng đầu của
-                                    nho.</span>
-                                <a href="#" class="news__blog__link">xem thêm...</a>
-                            </div>
+                        <div class="question__answer__container">
+                            <a href="#">
+                                <img src="https://afamilycdn.com/thumb_w/650/150157425591193600/2021/7/13/base64-16261710007082116287345.png" alt=""
+                                    class="question__answer__img">
+                                <h2 class="question__answer__heading">Xử lý thế nào khi cảm thấy túc ngực huyết áp
+                                    tăng
+                                    160/130</h2>
+                                <div class="answer__container">
+                                    <img src="../assets/image/maxresdefault.jpg"
+                                        alt="" class="doctor__img">
+                                    <div class="answer__info">
+                                        <div class="answer__hint">Được trả lời bởi</div>
+                                        <div class="doctor__name">Nguyễn Anh Quốc</div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="question__answer__container">
+                            <a href="#">
+                                <img src="https://afamilycdn.com/thumb_w/650/150157425591193600/2021/7/13/base64-16261710007082116287345.png" alt=""
+                                    class="question__answer__img">
+                                <h2 class="question__answer__heading">Xử lý thế nào khi cảm thấy túc ngực huyết áp
+                                    tăng
+                                    160/130</h2>
+                                <div class="answer__container">
+                                    <img src="../assets/image/maxresdefault.jpg"
+                                        alt="" class="doctor__img">
+                                    <div class="answer__info">
+                                        <div class="answer__hint">Được trả lời bởi</div>
+                                        <div class="doctor__name">Nguyễn Anh Quốc</div>
+                                    </div>
+                                </div>
+
+                            </a>
                         </div>
                     </div>
-                </div>
             </div>
 
         </div>

@@ -188,6 +188,7 @@
   height: 20px;
   border-radius: 50px;
   margin: 0 10px;
+  object-fit: cover;
 }
 .answer__hint {
   font-size: 0.9rem;

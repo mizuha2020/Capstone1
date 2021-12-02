@@ -1,10 +1,12 @@
-const getAssignments = document.querySelector(".assignment");
+const getAssignments = document.querySelectorAll(".assignment");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".modal__overlay");
 
-getAssignments.addEventListener("click", () => {
-  modal.style.display = "flex";
-});
+getAssignments.forEach(assignment=>{
+  assignment.onclick = () => {
+      modal.style.display = "flex";
+  }
+})
 //modal hidden
 overlay.addEventListener("click", function (e) {
   modal.style.display = "none";
@@ -34,7 +36,7 @@ window.addEventListener("load", function () {
 //display answer box
 const answer = document.querySelectorAll(".answer");
 answer.forEach((item, index) => {
-  item.addEventListener("click", () => {
+  item.onclick= () => {
     item.classList.add("selected");
     let itemNoSelected = [...answer].filter(
       (notSelect) => !notSelect.classList.contains("selected")
@@ -47,7 +49,7 @@ answer.forEach((item, index) => {
         index
       ].innerHTML = `<textarea rows="5" id="answer__content__textarea" name="questionContent"
     placeholder="Nhập câu trả lời" spellcheck="false">${
-      document.querySelector(".answer__content").textContent
+      document.querySelectorAll(".answer__content")[index].textContent || null
     }</textarea>
 <button class="btn__save_answer btn-answer">Xác nhận</button>`;
     } else {
@@ -59,16 +61,18 @@ answer.forEach((item, index) => {
     }
     answerArea.appendChild(answerBox[index]);
     const answerConfirm = document.querySelector(".btn__save_answer");
-    answerConfirm.addEventListener("click", () => {
+    answerConfirm.onclick = () => {
       item.classList.remove("selected");
       itemNoSelected.forEach((a) =>
         a.parentNode.classList.remove("display--none")
       );
-      if (document.getElementById("answer__content__textarea").value != "")
+      if (document.getElementById("answer__content__textarea").value != ""){
         answerBox[index].innerHTML = `<div class="answer__content">
         ${document.getElementById("answer__content__textarea").value}
     </div>`;
+        console.log(answerBox[index].children[0]); 
+      }
       else answerBox[index].innerHTML = ``;
-    });
-  });
+    };
+  };
 });
